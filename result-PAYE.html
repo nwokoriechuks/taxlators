@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAYE Result - Taxlator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="result.css" />
+  </head>
+  <body>
+  <div id="navbar"></div>
+
+    <main class="container">
+      <div class="result-card">
+        <div class="result-header">
+          <p>Annual PAYE/PIT Result</p>
+          <h1>₦15,350.00</h1>
+          <span>Total Tax Due</span>
+        </div>
+
+        <hr class="divider" />
+
+        <div class="summary-grid">
+          <div class="summary-box">
+            <label>Gross Income</label>
+            <p>₦200,000.00</p>
+          </div>
+          <div class="summary-box">
+            <label>Net Income</label>
+            <p>₦153,650.00</p>
+          </div>
+        </div>
+
+        <details class="breakdown-wrap">
+          <summary class="breakdown-btn">
+            View Tax Breakdown <i class="fa-solid fa-chevron-down"></i>
+          </summary>
+
+          <div class="breakdown-content">
+            <div class="breakdown-section">
+              <h3>Tax Calculation Breakdown</h3>
+              <div class="row">
+                <span>Pension Deduction (8%)</span>
+                <span class="negative">-₦16,000.00</span>
+              </div>
+              <div class="row">
+                <span>National Health Insurance Scheme (5%)</span>
+                <span class="negative">-₦10,000.00</span>
+              </div>
+              <div class="row">
+                <span>National Housing Fund (2.5%)</span>
+                <span class="negative">-₦5,000.00</span>
+              </div>
+              <hr />
+              <div class="row bold-row">
+                <span>Taxable Income</span>
+                <span>₦169,000.00</span>
+              </div>
+              <div class="row bold-row">
+                <span>Annual Taxable Income</span>
+                <span>₦2,028,000.00</span>
+              </div>
+              <hr />
+            </div>
+
+            <div class="breakdown-section bands-section">
+              <h4>Progressive Tax Band (Annual)</h4>
+              <div class="row small-text">
+                <span>₦0 - ₦800,000</span> <span>0%</span>
+              </div>
+              <div class="row small-text">
+                <span>₦800,001 - ₦3,000,000</span> <span>15%</span>
+              </div>
+              <div class="row small-text">
+                <span>₦3,000,001 - ₦12,000,000</span> <span>18%</span>
+              </div>
+              <div class="row small-text">
+                <span>₦12,000,001 - ₦25,000,000</span> <span>21%</span>
+              </div>
+              <div class="row small-text">
+                <span>₦25,000,001 - ₦50,000,000</span> <span>23%</span>
+              </div>
+              <div class="row small-text">
+                <span>Above ₦50,000,000</span> <span>25%</span>
+              </div>
+              <hr />
+            </div>
+
+            <div class="breakdown-section">
+              <h4>Break Down Your Tax</h4>
+              <div class="row"><span>First ₦800,000</span> <span>₦0</span></div>
+              <div class="row">
+                <span>Taxable Remaining = ₦2,028,000 - ₦800,000</span>
+                <span>₦1,228,000</span>
+              </div>
+              <div class="row">
+                <span>Tax 15% of ₦1,228,000</span> <span>₦184,200</span>
+              </div>
+              <hr />
+              <div class="row total-row">
+                <span>Total Annual Tax</span> <span>₦184,200</span>
+              </div>
+              <div class="row total-row">
+                <span>Monthly Tax</span> <span>₦15,350</span>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <a href="calculate.html" class="btn-primary">Calculate Another Tax</a>
+
+      <div class="signup-card">
+        <h3>Save Your Calculations</h3>
+        <p>
+          Create a free account to save your tax calculations, track history,
+          and get tax reminders.
+        </p>
+        <div class="signup-form">
+          <div class="input-group">
+            <i class="fa-regular fa-envelope"></i>
+            <input type="email" placeholder="Enter your email" />
+          </div>
+          <button class="btn-signup">Sign Up</button>
+        </div>
+        <a href="#" class="guest-link">Continue as guest</a>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Taxlator. For informational purposes only.</p>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="#">Contact</a>
+      </div>
+    </footer>
+
+   <script src="app.js"></script>
+  </body>
+</html>

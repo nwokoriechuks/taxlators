@@ -1,0 +1,386 @@
+/* For the page default reset... */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+a{
+  text-decoration:none;
+}
+  .wrapper {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.header {
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 64px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+
+.logo-placeholder img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+
+@media (max-width: 640px) {
+  .logo-placeholder img {
+    height: 36px;
+  }
+}
+
+.nav-links a {
+  margin: 0 16px;
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+}
+.nav-links a:hover {
+  color: #0f3c88;
+}
+
+.nav-links a.active {
+  color: #0f3c88;
+  font-weight: bold;
+}
+.header-btn {
+  padding: 8px 18px;
+  border-radius: 8px;
+  background-color: #eef2f7;
+  color: #000;
+  font-weight: 600;
+  font-size: 14px;
+}
+    
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 22px;
+      height: 16px;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      display: block;
+      height: 3px;
+      width: 100%;
+      background: #374151;
+      border-radius: 2px;
+    }
+
+   
+    .mobile-nav {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background: #ffffff;
+      border-top: 1px solid #e5e7eb;
+      flex-direction: column;
+      padding: 10px 24px;
+      gap: 12px;
+    }
+
+    .mobile-nav a {
+      color: #374151;
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+/* For the Main Container... */
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.page {
+  max-width: 640px;
+  padding: 60px auto;
+}
+.back {
+  display: inline-block;
+  background: #e5e7eb;
+  padding: 10px 26px;
+  border-radius: 999px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #374151;
+  margin-bottom: 28px;
+}
+
+/* Calculator Cardd... */
+.calculator-card {
+  background: white;
+  padding: 30px 30px 10px 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #0f3c88;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 0.9em;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* For Inputs amd Buttons */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.toggle-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.toggle-btn {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background: white;
+}
+
+.toggle-btn.active {
+  background-color: #0f3c88;
+  color: white;
+  border-color: #2f5fb3;
+}
+
+.form-section {
+  margin-bottom: 20px;
+}
+
+.percentage-group {
+  display: flex;
+  gap: 10px;
+}
+
+.percent {
+  flex: 1;
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: white;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.percent.active {
+  border-color: #0f3c88;
+  color: #0f3c88;
+  background-color: #e6f0fa;
+  font-weight: bold;
+}
+
+/* Checkbox Grid... */
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 35px;
+  row-gap: 8px;
+  margin-bottom: 20px;
+}
+
+.checkbox-item {
+  font-weight: 500;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  padding: 5px 8px;
+  border-radius: 7px;
+  background: white;
+  cursor: pointer;
+}
+
+.checkbox-item input[type="checkbox"] {
+  accent-color: #0f3c88;
+  cursor: pointer;
+}
+
+.btn-primary {
+  width: 50%;
+  display: block;
+  margin: 20px auto 0 auto;
+  padding: 15px 15px 10px 15px;
+  background-color: #0f3c88;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Save Box... */
+.save-box {
+  background-color: #9eafca;
+  padding: 30px;
+  border-radius: 10px;
+  color: #0d2b4d;
+  margin-top: 5px;
+}
+
+.save-text h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+.save-text p {
+  color: #123a6b;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+.save-action {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.save-action input {
+  flex: 1.6;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.btn-dark {
+  flex: 1;
+  background-color: #083676;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.guest-link {
+  font-size: 0.8rem;
+  color: #0d2b4d;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Footer................. */
+footer {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 20px;
+  padding: 0 40px 20px;
+  flex-wrap: nowrap;
+  background: whitesmoke;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+.footer-links a {
+  color: #666;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* For Mobile Responsivveness... */
+  @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .mobile-nav {
+        display: none;
+      }
+
+      .header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    }
+    
+@media (max-width: 600px) {
+  .navbar {
+    padding: 15px;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .nav-links {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 0.9rem;
+  }
+  .container {
+    margin: 10px;
+    width: auto;
+  }
+  .calculator-card {
+    padding: 20px;
+  }
+  .percentage-group {
+    flex-wrap: wrap;
+  }
+  .percent {
+    min-width: 45%;
+    margin-bottom: 5px;
+  }
+  .checkbox-grid {
+    grid-template-columns: 1fr;
+  }
+  .save-action {
+    flex-direction: column;
+  }
+  .btn-dark {
+    width: 100%;
+  }
+}

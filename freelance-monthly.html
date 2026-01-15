@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freelancer / Self-Employed Tax - Monthly</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="monthly.css" />
+
+</head>
+
+<body>
+   
+  <div id="navbar"></div>
+
+    <main class="page">
+        <a href="calculate.html" class="back">← Back</a>
+
+        <div class="card">
+            <h1>Freelancer/Self-Employed Tax</h1>
+            <p class="subtitle">
+                Calculate tax on your freelance or business income
+            </p>
+
+
+            <div class="section">
+                <label class="label">Gross Monthly Income</label>
+                <div class="input-group">
+                    <span class="currency">₦</span>
+                    <input type="number" placeholder="0" />
+                </div>
+            </div>
+
+            <div class="section">
+                <label class="label">Pension Contributions</label>
+                <div class="input-group">
+                    <span class="currency">₦</span>
+                    <input type="number" placeholder="0" />
+                </div>
+            </div>
+
+            <div class="expenses">
+                <div class="expenses-header">
+                    <div>
+                        <h3>Include Business Expenses</h3>
+                        <p>Deduct legitimate business expenses from your income</p>
+                    </div>
+                    <input type="checkbox" checked />
+                </div>
+
+                <div class="section">
+                    <label class="label">Total  Business Expenses</label>
+                    <div class="input-group">
+                        <span class="currency">₦</span>
+                        <input type="number" placeholder="0" />
+                    </div>
+                </div>
+            </div>
+
+            <button class="proceed">Proceed</button>
+        </div>
+    </main>
+
+
+    <div class="results">
+        <p>Taxable Income: ₦<span id="taxableIncome">0</span></p>
+        <p>Total Tax: ₦<span id="totalTax">0</span></p>
+        <p>Net Income: ₦<span id="netIncome">0</span></p>
+
+        <ul id="taxBreakdown"></ul>
+    </div>
+
+    <footer class="footer">
+        <p>© 2026 Taxlator. For informational purposes only.</p>
+        <div class="footer-links">
+            <a href="#">About</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="#">Contact</a>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+    <script src="freelancmonthly.js"></script>
+    
+</body>
+
+</html>

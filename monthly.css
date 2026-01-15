@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #e9eff5;
+  color: #1f2937;
+}
+
+a{
+  text-decoration:none;
+}
+
+  .wrapper {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* PROFILE */
+.profile {
+  position: relative;
+  margin-left: 12px;
+}
+
+.profile img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 48px;
+  right: 0;
+  background: #fff;
+  border-radius: 8px;
+  min-width: 150px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  z-index: 100;
+}
+
+.profile-dropdown a,
+.profile-dropdown button {
+  display: block;
+  padding: 10px 14px;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.profile-dropdown a:hover,
+.profile-dropdown button:hover {
+  background: #eef2f7;
+}
+
+.hidden {
+  display: none;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .nav-links,
+  .header-btn,
+  .profile {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+
+.page {
+  max-width: 640px;
+  margin: 60px auto;
+}
+
+
+.back {
+  display: inline-block;
+  background: #e5e7eb;
+  padding: 10px 26px;
+  border-radius: 999px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #374151;
+  margin-bottom: 28px;
+}
+
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 36px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+.card h1 {
+  color: #16326b;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  color: #6b7280;
+  font-size: 15px;
+  margin-bottom: 28px;
+}
+
+
+.section {
+  margin-bottom: 22px;
+}
+
+.label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+
+.toggle {
+  display: flex;
+  background: #f1f5f9;
+  border-radius: 10px;
+  padding: 5px;
+  width: fit-content;
+}
+
+.toggle-btn {
+  padding: 10px 22px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.toggle-btn.active {
+  background: white;
+  color: #16326b;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+
+.input-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+
+.currency {
+  margin-right: 8px;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  background: transparent;
+}
+
+
+.expenses {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 18px;
+  margin-bottom: 28px;
+}
+
+.expenses-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+
+.expenses h3 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.expenses p {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.proceed {
+  width: 100%;
+  padding: 16px;
+  background: #1e3a8a;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+.footer {
+  margin-top: 90px;
+  background: #f3f4f6;
+  padding: 40px 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.footer-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #6b7280;
+}
+
+@media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .mobile-nav {
+        display: none;
+      }
+
+      .header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    }
+    
+@media (max-width: 640px) {
+  .header {
+    padding: 16px 20px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .page {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 0 16px;
+  }
+
+  .card {
+    padding: 24px 18px;
+  }
+
+  .card h1 {
+    font-size: 19px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+
+  .toggle {
+    width: 100%;
+  }
+
+  .toggle-btn {
+    flex: 1;
+    text-align: center;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px 20px;
+    text-align: center;
+  }
+
+  .footer-links a {
+    margin: 0 10px;
+  }
+}

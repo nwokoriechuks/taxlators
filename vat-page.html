@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VAT Calculation</title>
+    <link rel="stylesheet" href="vat-page-style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <!-- Navigation Bar...Start>>>> -->
+  <div id="navbar"></div>
+    <!-- <<<<<<<< Nav Bar End... -->
+
+    <!-- Main Container...Start>>>>>-->
+    <main class="container">
+        <div class="page"> <a href="calculate.html" class="back">← Back</a></div>
+
+        <div class="calculator-card">
+            <h2>VAT Calculation</h2>
+            <p class="subtitle">
+                Quickly add or remove tax from your prices using the latest 2026 rates.
+            </p>
+            <!-- Form Sections... Start>>>>>> -->
+            <div class="form-group">
+                <label for="amount" class="trxn-amount">Transaction Amount</label>
+                <input type="number" placeholder="Enter amount" class="input-field" id="amount" />
+            </div>
+            <div class="toggle-group">
+                <button class="toggle-btn active" data-mode="add">+Add VAT</button>
+                <button class="toggle-btn" data-mode="remove">-Remove VAT</button>
+            </div>
+
+            <div class="form-section">
+                <label for="trxn-type">Transaction type</label>
+                <div class="checkbox-grid">
+                    <label class="checkbox-item">
+              Domestic sale/Purchase 7.5% <input type="checkbox" checked />
+            </label>
+                    <label class="checkbox-item">
+              Digital Services 7.5%<input type="checkbox" />
+            </label>
+                    <label class="checkbox-item">
+              Export/International 0%<input type="checkbox" />
+            </label>
+                    <label class="checkbox-item">
+              Exempt Items (no VAT) <input type="checkbox" />
+            </label>
+                </div>
+            </div>
+            <!-- <<<<<<<<< Forrm Sections End -->
+            <button class="btn-primary" id="proceed-btn">Proceed</button>
+        </div>
+        <!-- Save Box...Start>>>>> -->
+        <div class="save-box">
+            <div class="save-text">
+                <h3>Save Your Calculations</h3>
+                <p>
+                    Create a free account to save you tax calculations, track history, and get tax reminders.
+                </p>
+            </div>
+            <div class="save-action">
+                <input type="email" placeholder="Enter your email" />
+                <button class="btn-dark">Sign Up</button>
+            </div>
+            <a href="#" class="guest-link">Continue as guest</a>
+        </div>
+        <!-- <<<<<<<<<<Save Box...End -->
+    </main>
+    <!-- <<<<<<<< Main Container...End -->
+
+    <footer>
+        <p>&copy; 2026 Taxlator. For informational purposes only.</p>
+        <div class="footer-links">
+            <a href="#">About</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="#">Contact</a>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+    <script src="vat.js">
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="payem.css">
+</head>
+
+<body>
+
+
+   <div id="navbar"></div>
+
+    <div class="page-wrapper">
+        <div class="back-wrapper">
+            <a href="calculate.html" class="back">&larr; Back</a>
+        </div>
+
+        <div class="calculator-card">
+            <h2>PAYE/PIT Calculator</h2>
+            <div class="subtitle">Calculate your personal income tax based on the Nigerian Tax Laws(PITA)</div>
+
+
+
+            <div class="input-group">
+                <label>Gross Annual Income</label>
+                <div class="input-box">
+                    <span>₦</span>
+                    <input type="number" placeholder="0">
+                </div>
+            </div>
+
+
+            <div class="option">
+                <div>
+                    <strong>Include Pension Contribution</strong>
+                    <span>8% Deduction on basic salary</span>
+                </div>
+                <input type="checkbox">
+            </div>
+            <div class="options">
+                <div class="option">
+                    <div>
+                        <strong>Include National Housing Fund</strong>
+                        <span>2.5% deduction on basic salary</span>
+                    </div>
+                    <input type="checkbox">
+                </div>
+            </div>
+
+            <div class="option">
+                <div>
+                    <strong>Include National Health Insurance Scheme</strong>
+                    <span>5% deduction on basic salary</span>
+                </div>
+                <input type="checkbox">
+            </div>
+            <div class="input-group">
+                <label>Rent Relief</label>
+                <div class="input-box">
+                    <span>₦</span>
+                    <input type="number" placeholder="0">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Other Deductions</label>
+                <div class="input-box">
+                    <span>₦</span>
+                    <input type="number" placeholder="0">
+                </div>
+            </div>
+            <button class="proceed-btn">Proceed</button>
+        </div>
+
+        <div class="footer">
+            <div>&copy; 2026 Taxlator. For information purpose only</div>
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="#">Terms</a>
+            </div>
+        </div>
+    </div>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+.result-row,
+.result-total {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+}
+
+.result-row span {
+  color: #6b7280;
+}
+
+.result-total {
+  font-size: 18px;
+  font-weight: bold;
+  color: #123c8c;
+}

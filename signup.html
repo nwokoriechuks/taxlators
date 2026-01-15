@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taxlator - Sign Up</title>
+  <link rel="stylesheet" href="signup.css" />
+</head>
+<body>
+
+  <header class="logo-header">
+    <img src="taxlator.png" alt="Taxlator Logo" class="logo">
+  </header>
+
+  <main>
+    <div class="signup-card">
+      <h2>Sign Up</h2>
+      <p class="subtitle">Create your free Taxlator account</p>
+
+      <!-- Global error message -->
+      <small id="signupError" class="error" style="text-align:center; display:block; margin-bottom:12px;"></small>
+
+      <form id="signupForm">
+
+        <label>First Name</label>
+        <input type="text" id="firstName" placeholder="Enter your first name" required>
+
+        <label>Last Name</label>
+        <input type="text" id="lastName" placeholder="Enter your Last Name" required>
+
+        <label>Your Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email address" required>
+
+        <label>Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+
+        <label>Confirm Password</label>
+        <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+
+        <div class="terms">
+          <input type="checkbox" id="terms" required>
+          <span>By clicking, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></span>
+        </div>
+
+        <button type="submit" class="btn">Sign Up</button>
+
+        <p class="signin-text">
+          Already have an account? <a href="signin.html">Sign In</a>
+        </p>
+
+      </form>
+    </div>
+  </main>
+
+<footer class="footer">
+    <div class="footer-left">
+        © 2026 Taxlator.<br>
+        For informational purposes only.
+    </div>
+
+    <div class="footer-links">
+        <div>
+            <a href="#">About Us</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="#">Feedback</a>
+        </div>
+        <div>
+            <a href="#">Help</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="#">Trust, Safety & Security</a>
+        </div>
+    </div>
+
+    <div class="footer-social">
+        <span>Follow us</span>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="signup.js"></script>
+</body>
+</html>

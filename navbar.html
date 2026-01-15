@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+
+<body>
+<header class="header">
+  <div class="logo-placeholder">
+    <img src="TAX LOGO 2.png" alt="Taxlator Logo">
+  </div>
+
+  <!-- Desktop nav links -->
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="calculate.html">Calculate</a>
+    <a href="taxguides.html">Tax Guides</a>
+    <a href="about.html">About</a>
+    <a href="#">FAQs</a>
+    <a href="terms.html">Terms</a>
+  </nav>
+
+  <!-- LOGIN BUTTON -->
+  <a href="signin.html" class="header-btn" id="loginBtn">Login</a>
+
+  <!-- PROFILE MENU -->
+  <div class="profile hidden" id="profileMenu">
+    <img src="https://i.pravatar.cc/40" id="profileImg" alt="User Profile">
+    <div class="profile-dropdown hidden" id="profileDropdown">
+      <a href="#">My Account</a>
+      <button id="logoutBtn">Logout</button>
+    </div>
+  </div>
+
+  <!-- HAMBURGER MENU -->
+  <div class="hamburger" onclick="toggleMobileNav()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav hidden" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="calculate.html">Calculate</a>
+    <a href="taxguides.html">Tax Guides</a>
+    <a href="about.html">About</a>
+    <a href="#">FAQs</a>
+    <a href="terms.html">Terms</a>
+  </div>
+</header>
+
+
+<script src="navbar.js"></script>
+<script src="auth.js"></script>
+
+</body>
+</html>

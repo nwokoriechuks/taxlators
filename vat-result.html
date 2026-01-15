@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VAT Result - Taxlator</title>
+    <link rel="stylesheet" href="vat-result.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+  
+   <div id="navbar"></div>
+    <main class="container">
+      <div class="calculator-card">
+        <div class="result-header">
+          <p class="label-text">VAT Result</p>
+          <h1 class="bold-amount" id="vatAmountMain"></h1>
+          <p class="label-text" id="vatRateLabel">VAT Amount(5%)</p>
+        </div>
+
+        <hr class="divider" />
+
+        <div class="breakdown-grid">
+          <div class="info-box">
+            <span class="info-label">Transaction Amount (Excluding VAT)</span>
+            <span class="info-value" id="baseAmount"></span>
+          </div>
+          <div class="info-box">
+            <span class="info-label">Total Amount (Including VAT)</span>
+            <span class="info-value" id="totalAmount"></span>
+          </div>
+        </div>
+
+        <div class="summary-row">
+          <span id="vatRateSummary">VAT Amount( 5%)</span>
+          <span class="summary-value" id="vatAmountSummary"></span>
+        </div>
+      </div>
+
+      <button class="btn-primary full-btn">Calculate Another Tax</button>
+
+      <div class="save-box">
+        <div class="save-text">
+          <h3>Save Your Calculations</h3>
+          <p>
+            Create a free account to save your tax calculations, track history,
+            and get tax reminders.
+          </p>
+        </div>
+        <div class="save-action">
+          <div class="mail-icon">
+            <i class="fa-regular fa-envelope"></i
+            ><input type="email" placeholder="Enter your email" />
+          </div>
+
+          <button class="btn-dark">Sign Up</button>
+        </div>
+        <a href="#" class="guest-link">Continue as guest</a>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Taxlator. For informational purposes only.</p>
+      <div class="footer-links">
+        <a href="#">About</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Contact</a>
+      </div>
+    </footer>
+    
+  
+<script src="app.js"></script>
+
+    <script src="vat-result.js"></script>
+  </body>
+</html>

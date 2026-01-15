@@ -1,0 +1,130 @@
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.header {
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 64px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+
+.logo-placeholder img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+
+@media (max-width: 640px) {
+  .logo-placeholder img {
+    height: 36px;
+  }
+}
+
+.nav-links a {
+  margin: 0 16px;
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+}
+.nav-links a:hover {
+  color: #0f3c88;
+}
+
+.nav-links a.active {
+  color: #0f3c88;
+  font-weight: bold;
+}
+.header-btn {
+  padding: 8px 18px;
+  border-radius: 8px;
+  background-color: #eef2f7;
+  color: #000;
+  font-weight: 600;
+  font-size: 14px;
+}
+    
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 22px;
+      height: 16px;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      display: block;
+      height: 3px;
+      width: 100%;
+      background: #374151;
+      border-radius: 2px;
+    }
+
+   
+    .mobile-nav {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background: #ffffff;
+      border-top: 1px solid #e5e7eb;
+      flex-direction: column;
+      padding: 10px 24px;
+      gap: 12px;
+    }
+
+    .mobile-nav a {
+      color: #374151;
+      font-weight: 500;
+      font-size: 14px;
+    }
+.profile {
+  position: relative;
+  margin-left: 12px;
+}
+
+.profile img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 48px;
+  right: 0;
+  background: #fff;
+  border-radius: 8px;
+  min-width: 150px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  z-index: 100;
+}
+
+.profile-dropdown a,
+.profile-dropdown button {
+  display: block;
+  padding: 10px 14px;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.profile-dropdown a:hover,
+.profile-dropdown button:hover {
+  background: #eef2f7;
+}
+
+.hidden {
+  display: none;
+}

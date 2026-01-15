@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Income Tax</title>
+    <link rel="stylesheet" href="cit.css" />
+</head>
+
+<body>
+  <div id="navbar"></div>
+    <div class="page">
+        <a href="calculate.html" class="back">← Back</a>
+        <div class="card">
+            <h2>Company Income Tax</h2>
+            <p class="subtitle">
+                Calculate company income tax based on Nigerian CIT rate
+            </p>
+
+            <label>Revenue</label>
+            <div class="input-group">
+                <span></span>
+                <input type="number" placeholder="0" />
+            </div>
+
+            <label>Company Size</label>
+            <p class="hint">
+                Tax rate will be applied automatically based on company size
+            </p>
+
+            <div class="dropdown">
+                <div class="dropdown-header" id="dropdownToggle">
+                    <span id="selectedSize">Select Size</span>
+                    <span class="arrow" id="arrow"></span>
+
+                </div>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <div class="option" data-value="0">Small Company (0%)</div>
+                    <div class="option" data-value="20">Medium Comapny (20%)</div>
+                    <div class="option" data-value="30">Large Company (30%)</div>
+
+                </div>
+            </div>
+
+            <div class="expenses">
+                <div class="expenses-header">
+                    <label class="checkbox-container">
+            <input type="checkbox" id="expenseCheck" checked>
+            <span class="checkmark"></span>
+          </label>
+
+                    <div>
+                        <strong>Include Business Expenses</strong>
+
+                        <p class="hint">Deduct legitimate business expenses from your income</p>
+                    </div>
+
+                </div>
+                <label>Total Business Expenses</label>
+                <div class="input-group">
+                    <span>₦</span>
+                    <input type="number" placeholder="0">
+                </div>
+            </div>
+            <button class="proceed-btn">Proceed</button>
+
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <p>© 2026 Taxlator. For informational purposes only.</p>
+        <div class="footer-links">
+            <a href="#">About</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="#">Contact</a>
+        </div>
+    </footer>
+<script src="app.js"></script>
+    <script src="cit.js"></script>
+</body>
+
+</html>

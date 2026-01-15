@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verify Email - Taxlator</title>
+<link rel="stylesheet" href="verify.css">
+</head>
+<body>
+
+<div id="navbar"></div>
+
+<main class="verify-container">
+  <h2>Email Verification</h2>
+  <div class="spinner"></div>
+  <p id="verifyMessage">Verifying your email, please wait...</p>
+  <button id="resendBtn" style="display:none;">Resend Verification Email</button>
+</main>
+
+<script>
+const BASE_URL = "https://gov-taxlator-api.onrender.com";
+
+const urlParams = new URLSearchParams(window.location.search);
+const token = urlParams.get("token");
+const messageEl = document.getElementById("verifyMessage");
+const resendBtn = document.getElementById("resendBtn");
+
+// Call API to verify
+if (token) {
+  fetch(`${BASE_URL}/api/auth/verify?token=${token}`)
+    .then(res => res.json())
+    .then(data => {
+      if (data.success) {
+        messageEl.textContent = "Your email has been verified! Redirecting to homepage...";
+        setTimeout(() => window.location.href = "index.html", 3000);
+      } else {
+        messageEl.textContent = "Verification failed or token expired.";
+        resendBtn.style.display = "inline-block";
+      }
+    })
+    .catch(err => {
+      messageEl.textContent = "Network error. Try again later.";
+      resendBtn.style.display = "inline-block";
+    });
+}
+
+// Resend verification email
+resendBtn.addEventListener("click", () => {
+  fetch(`${BASE_URL}/api/auth/resend-verification`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ email: localStorage.getItem("authUserEmail") }),
+  })
+  .then(res => res.json())
+  .then(data => alert(data.message || "Verification email resent!"))
+  .catch(() => alert("Error sending verification email."));
+});
+</script>
+<script src="app.js"></script>
+</body>
+</html>

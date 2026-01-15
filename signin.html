@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxlator | Sign In</title>
+
+    
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="signin.css">
+</head>
+<body>
+
+<header class="header">
+    <img src="taxlator.png" alt="Taxlator Logo" class="logo">
+</header>
+
+<main class="main">
+    <div class="login-card">
+        <h1>Welcome back!</h1>
+        <p class="subtitle">Sign in to your account</p>
+
+
+        <small class="error" id="loginError" style="text-align:center; display:block; margin-bottom:12px;"></small>
+
+        <form id="loginForm" novalidate>
+            
+            <div class="form-group">
+                <label>Your Email:</label>
+                <input type="email" id="email" placeholder="Enter your email">
+                <small class="error" id="emailError"></small>
+            </div>
+            
+            <div class="form-group">
+                <label>Password:</label>
+                <div class="password-wrapper">
+                    <input type="password" id="password" placeholder="Enter your password">
+                    <i class="fa-regular fa-eye toggle-password" id="togglePassword"></i>
+                </div>
+                <small class="error" id="passwordError"></small>
+            </div>
+            
+            <div class="form-options">
+                <label class="remember">
+                    <input type="checkbox"> Remember me
+                </label>
+                <a href="#" class="forgot">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="btn">Sign In</button>
+
+            <p class="signup">
+                Don’t have an account? <a href="signup.html">Sign up</a>
+            </p>
+        </form>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer-left">
+        © 2026 Taxlator.<br>
+        For informational purposes only.
+    </div>
+
+    <div class="footer-links">
+        <div>
+            <a href="#">About Us</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="#">Feedback</a>
+        </div>
+        <div>
+            <a href="#">Help</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="#">Trust, Safety & Security</a>
+        </div>
+    </div>
+
+    <div class="footer-social">
+        <span>Follow us</span>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="login.js"></script>
+</body>
+</html>
